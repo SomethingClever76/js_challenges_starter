@@ -5,19 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tallest Mountain</title>
+    <style>
+        #mountains {
+            height: 750px;
+            width: 100%;
+            background-image: url(assets/images/himalayas.jpg);
+            background-repeat: no-repeat;   
+        }
+
+        #mountains ul li {
+            color: white;
+            font-size: 40px;
+            font-weight: bolder;
+            padding: 40px;
+            display: inline;
+        }
+
+        #mountains ul:first-child {
+            padding-left: 50px;
+        } 
+
+        #WDYT {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
+
 <body>
     <a href="index.html"><- Back to Navigation</a><br/><br/>
    
-    <ul>
-       <li>Everest</li>
-       <li>K2</li>
-       <li>Kangchenjunga</li>
-       <li>Lhotse</li>
-       <li>Makalu</li>
-   </ul>
+    <div id="mountains">  
+        <ul>
+            <li>Everest</li>
+            <li>K2</li>
+            <li>Kangchenjunga</li>
+            <li>Lhotse</li>
+            <li>Makalu</li>
+        </ul>
 
-   <button id="WDYT">Which mountain is the tallest?</button>
+        <button id="WDYT">Which mountain is the tallest?</button>
+    </div>
   
    <script src="./assets/javascript/tallest-mountain.js"></script>
 </body>

@@ -14,19 +14,21 @@
 
         let question = prompt("Which mountain is the tallest?")
 
-        // Math.max (mountains);
         tallest = Math.max.apply(null, mountains);
-        console.log (tallest)
+        console.log (tallest);
 
         if(tallest == 29029 ){
-            tallestMountain = "Everest"
+            tallestMountain = "Everest";
         }
 
         if(question == tallestMountain){
-            document.write("You're right!")
+            document.getElementById("mountains").innerHTML = "You're right!";
+            document.getElementById("mountains").style.color = "white";
+            document.getElementById("mountains").style.textAlign = "center";
+            document.getElementById("mountains").style.fontSize = "50px";
+            document.getElementById("mountains").style.backgroundImage = "url(assets/images/mountainTop.jpg)";
+            document.getElementById("mountains").style.backgroundSize = "100%";
         }
     })
-   
-    // document.write("hello from tallest-mountain.js");
 
 })();

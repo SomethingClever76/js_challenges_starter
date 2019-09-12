@@ -1,27 +1,34 @@
 (function(){
 
-    let word = "javascript";
+    let word = ["javascript", "html", "cascading", "spreadsheets"];
+    let letter = prompt("Guess a letter");
+    let WordDisplay = "";
     
-    let answerArray = [];
-    for (var i = 0; i < word.length; i++) {
-     answerArray[i] = "_";
-    }
-    var remainingLetters = word.length;
-
-    alert (answerArray.join(" "));
-
-    let letter = prompt("Guess a letter, or click Cancel to stop playing.");
-    if (guess.length !== 1) {
+    if (letter.length !== 1) {
     alert("Please enter a single letter.");
+    } else if (word.includes(letter)) {
+        console.log ("Yeah, the letter "+letter+" exists "+char_count(word, letter)+" times in my word.");
     } else {
-        for (var j = 0; j < word.length; j++) {
-             if (word[j] === guess) {
-             answerArray[j] = guess;
-             remainingLetters--;
-             }
+        console.log ("Nope, that letter doesn't exist in my word");        
             }
 
+    function initiateWordDisplay() {
+        displayArray = [];
+        for (x = 0; x < letterCount; x++) { 
+           displayArray.push("_ ");
+        }
+        
+        document.getElementById("WordDisplay").innerHTML = displayArray.join(" ");
+    }
 
-    // document.write("hello from hangman-lite.js");
+    function char_count(word, letter) {
+        let letter_Count = 0;
+        for (let position = 0; position < word.length; position++) {
+        if (word.charAt(position) == letter) {
+            letter_Count += 1;
+        }
+      }
+      return letter_Count;
+    }
 
 })();

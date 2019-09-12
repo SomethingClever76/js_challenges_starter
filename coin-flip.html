@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coin Flip</title>
+    <style>
+        #imageContainer {
+            width: 500px;
+            height: 500px;
+            background-image: url(assets/images/coinFlipGif.webp);
+            background-repeat: no-repeat;
+            background-size: 500px;
+        }
+    </style>
 </head>
+
 <body>
     <a href="index.html"><- Back to Navigation</a><br/><br/>
 
-    <button id="coinFlipper">Flip a coin!</button>
-
+    <div id="imageContainer">
+        <button id="coinFlipper">Flip a coin!</button>
+    </div>
+    
     <script src="./assets/javascript/coin-flip.js"></script>
 </body>
 </html>
