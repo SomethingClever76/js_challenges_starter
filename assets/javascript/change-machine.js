@@ -1,6 +1,6 @@
 (function () {
 
-    let amount = 47;
+    let amount = 93;
     let twenties = 0;
     let tens = 0;
     let fives = 0;

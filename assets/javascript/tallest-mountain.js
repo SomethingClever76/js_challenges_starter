@@ -6,7 +6,6 @@
     let Lhotse = 27940;
     let Makalu = 27838;
     let mountains = [Everest, K2, Kangchenjunga, Lhotse, Makalu];
-    let tallesMountain;
 
     let WDYT = document.querySelector ("#WDYT");
 
