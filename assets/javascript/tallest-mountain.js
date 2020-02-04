@@ -1,4 +1,16 @@
 (function(){
+    // OPTIONAL SOLUTION
+    // function findMaxnumber (numberArray) {
+    //     return Math.max (...numberArray);
+    // }
+
+    // let one = findMaxnumber ([1,2,3,4,5])
+    // let two = findMaxnumber ([23, 464, 1023, 57])
+    // let three = findMaxnumber ([11232,34,34646,242445])
+
+    // console.log(one)
+    // console.log(two)
+    // console.log(three)
 
     let Everest = 29029;
     let K2 = 28251;
